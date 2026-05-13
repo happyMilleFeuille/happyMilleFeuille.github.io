@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gakumas Note</title>
     
-    <!-- 구글 서치 콘솔 소유권 확인용 태그 -->
+    <!-- 구글 서치 콘솔 소유권 확인 -->
     <meta name="google-site-verification" content="WTUIctiVOEH6W01p9L-cLTHTsY584U27fPXIGb1RGSk" />
 
-    <!-- 구글이 인식할 도메인 전체의 간판 이름 -->
+    <!-- 구글에 진짜 본체 주소를 알려주는 표준 태그 -->
+    <link rel="canonical" href="https://happymillefeuille.github.io/gakumas/">
+
+    <!-- 사이트 이름 설정 -->
     <meta property="og:site_name" content="Gakumas Note">
-    
-    <!-- 구글 검색 알고리즘에 사이트 이름을 확정짓는 스키마 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -21,7 +22,7 @@
     }
     </script>
     
-    <!-- 크기별 파비콘 설정 -->
+    <!-- 파비콘 설정 -->
     <link rel="icon" href="/icon16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/icon32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/icon48x48.png" sizes="48x48" type="image/png">
@@ -32,13 +33,11 @@
     
     <h1>Gakumas Note</h1>
     <p>Gakuen Idolmaster Gacha Simulator & Stat Calculator</p>
-    
     <a href="/gakumas/" style="color: #bb86fc; text-decoration: none; font-weight: bold; font-size: 1.2rem;">Go to Main Page →</a>
     
     <script>
-        setTimeout(function() {
-            window.location.replace("https://happymillefeuille.github.io/gakumas/");
-        }, 1000); 
+        // 0초 즉시 이동 (replace 사용으로 히스토리 꼬임 방지)
+        window.location.replace("https://happymillefeuille.github.io/gakumas/");
     </script>
 </body>
 </html>
