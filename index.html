@@ -2,15 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    
-    <!-- 1. 기본 SEO 및 사이트 이름 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gakumas Note</title>
+    
+    <!-- 구글이 인식할 도메인 전체의 간판 이름 -->
     <meta property="og:site_name" content="Gakumas Note">
     
-    <!-- 2. 구글이 인식할 루트 경로의 파비콘 -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    
-    <!-- 3. 사이트 이름 확정을 위한 구조화 데이터 -->
+    <!-- 구글 검색 알고리즘에 사이트 이름을 확정짓는 스키마 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -19,10 +17,22 @@
       "url": "https://happymillefeuille.github.io/"
     }
     </script>
-
-    <!-- 4. 기존 서비스 경로로 자동 리다이렉트 (0초 후 이동) -->
-    <meta http-equiv="refresh" content="0; url=https://happymillefeuille.github.io/gakumas/">
+    
+    <!-- (선택) 파비콘을 루트에 올려두면 더 확실하게 적용됩니다 -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body style="background-color: #1a1a1a; color: white; text-align: center; padding-top: 20%; font-family: sans-serif;">
+    
+    <!-- 사용자 경험(UX) 및 안전한 이동을 위한 링크 -->
+    <h1>Gakumas Note</h1>
+    <p>Gakuen Idolmaster Gacha Simulator & Stat Calculator</p>
+    <a href="/gakumas/" style="color: #bb86fc; text-decoration: none; font-weight: bold; font-size: 1.2rem;">메인 페이지로 이동하기 →</a>
+    
+    <!-- 자바스크립트를 이용한 부드러운 자동 이동 (뒤로가기 꼬임 방지) -->
+    <script>
+        setTimeout(function() {
+            window.location.replace("https://happymillefeuille.github.io/gakumas/");
+        }, 1000); // 1초 후 메인 서비스로 자동 이동
+    </script>
 </body>
 </html>
